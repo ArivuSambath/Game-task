@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Game Styles */
+.game-container {
+  @apply text-center;
+}
+
+.game-title {
+  @apply text-4xl font-bold mb-8 text-gray-800;
+}
+
+.game-board {
+  @apply grid grid-cols-4 gap-4;
+}
+
+.card {
+  @apply w-24 h-24 bg-gray-700 text-white text-2xl flex justify-center items-center rounded cursor-pointer;
+}
+
+.card.flipped {
+  @apply bg-yellow-400;
+}
+
+.card.matched {
+  @apply bg-green-500;
+}
