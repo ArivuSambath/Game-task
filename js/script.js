@@ -81,6 +81,6 @@ function initGame() {
   });
 }
 
-restartButton.addEventListener("click", initGame);
+document.getElementById('restart-button').addEventListener('click', initGame);
 
 initGame();
